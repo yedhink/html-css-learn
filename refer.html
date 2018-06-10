@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Test Page</title>
+
+<style type="text/css">
+body {
+    margin:0;
+    padding:0;
+    background:#3F6A8A;
+}
+.wrap {
+    width:100%;
+    margin:0 auto;
+}
+.nav {
+    min-height:50px;
+    background:#148CE2;
+}
+.header {
+    min-height:200px;
+    background:#A71D1D;
+}
+.main {
+    width:100%;/*IE6 haslayout (contain floats)*/
+    overflow:hidden;/*contain child floats in modern browsers*/
+}
+    .content {
+        float:left;
+        width: 50%;
+        min-height:200px;
+        background:#FFCC00;
+    }
+    .links {
+        float:left;
+        width: 50%;
+        min-height:200px;
+        background:#62C014;
+    }
+.footer {
+    min-height:50px;
+    background:#148CE2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="wrap">
+    <div class="nav"></div>
+    <div class="header"></div>
+    <div class="main">
+        <div class="content"></div>
+        <div class="links"></div>
+    </div>
+    <div class="footer"></div>
+</div>
+
+</body>
+</html>
