@@ -13,6 +13,7 @@ badd +1 refer.html
 badd +1 ~/.config/nvim/init.vim
 badd +1 /mnt/work/lz/startpage
 badd +0 todo.html
+badd +0 todo.css
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -78,16 +79,36 @@ normal! zo
 normal! zo
 10
 normal! zo
-17
+18
 normal! zo
-24
+26
 normal! zo
-let s:l = 13 - ((12 * winheight(0) + 21) / 42)
+let s:l = 5 - ((4 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-13
-normal! 016|
+5
+normal! 012|
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/todo.css
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -129,7 +150,7 @@ normal! zt
 467
 normal! 016|
 lcd /mnt/work/lz/startpage
-tabnext 3
+tabnext 4
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
