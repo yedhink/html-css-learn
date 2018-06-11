@@ -1,6 +1,7 @@
 .card {
     width: 300px;
     background-color: #000;
+    border-radius: 5px;
 }
 .box3 {
     padding: 10px;
