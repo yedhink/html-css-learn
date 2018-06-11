@@ -152,7 +152,7 @@ normal! zt
 496
 normal! 0
 lcd /mnt/work/lz/startpage
-tabnext 3
+tabnext 4
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

@@ -15,6 +15,6 @@ ul > li {
 }
 
 ul > li:last-child {
-    color red;
+    color: red;
     text-decoration: line-through;
 }
