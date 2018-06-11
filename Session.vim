@@ -12,8 +12,9 @@ badd +1 index.html
 badd +1 refer.html
 badd +1 ~/.config/nvim/init.vim
 badd +1 /mnt/work/lz/startpage
-badd +0 todo.html
-badd +0 todo.css
+badd +1 todo.html
+badd +1 todo.css
+badd +0 slack.html
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -33,7 +34,7 @@ setlocal fdn=10
 setlocal fen
 55
 normal! zo
-let s:l = 58 - ((33 * winheight(0) + 21) / 42)
+let s:l = 58 - ((29 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -53,7 +54,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 29 - ((28 * winheight(0) + 21) / 42)
+let s:l = 29 - ((25 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -83,12 +84,32 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 15 - ((11 * winheight(0) + 18) / 37)
+let s:l = 10 - ((9 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-15
-normal! 019|
+10
+normal! 015|
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/slack.html
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 21) / 42)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.css
 set splitbelow splitright
@@ -103,12 +124,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 19 - ((18 * winheight(0) + 18) / 37)
+let s:l = 12 - ((11 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-19
-normal! 034|
+12
+normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -123,7 +144,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 23 - ((20 * winheight(0) + 21) / 42)
+let s:l = 23 - ((18 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -143,14 +164,14 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-496
+498
 normal! zo
-let s:l = 496 - ((22 * winheight(0) + 21) / 42)
+let s:l = 117 - ((5 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-496
-normal! 0
+117
+normal! 03|
 lcd /mnt/work/lz/startpage
 tabnext 4
 set stal=1
