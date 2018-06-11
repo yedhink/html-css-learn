@@ -13,8 +13,8 @@ badd +1 refer.html
 badd +1 ~/.config/nvim/init.vim
 badd +1 /mnt/work/lz/startpage
 badd +1 todo.html
-badd +1 todo.css
-badd +0 slack.html
+badd +12 todo.css
+badd +29 slack.html
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -91,26 +91,6 @@ normal! zt
 10
 normal! 015|
 lcd /mnt/work/lz/startpage
-tabedit /mnt/work/lz/startpage/slack.html
-set splitbelow splitright
-wincmd t
-set winminheight=1 winminwidth=1 winheight=1 winwidth=1
-argglobal
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=10
-setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 21) / 42)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
-lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.css
 set splitbelow splitright
 wincmd t
@@ -130,6 +110,32 @@ exe s:l
 normal! zt
 12
 normal! 0
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/slack.html
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+10
+normal! zo
+11
+normal! zo
+28
+normal! zo
+let s:l = 29 - ((28 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+29
+normal! 01|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -173,7 +179,7 @@ normal! zt
 117
 normal! 03|
 lcd /mnt/work/lz/startpage
-tabnext 4
+tabnext 5
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
