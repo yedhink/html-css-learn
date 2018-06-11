@@ -1,10 +1,12 @@
 body {
-    background-color: #2C323B;
+    background-color: #4d5567;
 }
 .subhead {
     text-decoration: solid white underline;
 }
-
-ul.li {
-    color: green;
+h1 {
+    color: #fff;
+}
+ul > li {
+    color: #50c878;
 }
