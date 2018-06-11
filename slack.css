@@ -23,6 +23,7 @@ body {
     border-radius: 5px;
 }
 .box3 {
+    float: inherit;
     padding: 10px;
 }
 div > button {
