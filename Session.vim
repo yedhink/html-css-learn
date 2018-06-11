@@ -83,12 +83,12 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 27 - ((26 * winheight(0) + 21) / 42)
+let s:l = 15 - ((11 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-27
-normal! 017|
+15
+normal! 019|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.css
 set splitbelow splitright
@@ -103,12 +103,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 8 - ((7 * winheight(0) + 21) / 42)
+let s:l = 19 - ((18 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
-normal! 05|
+19
+normal! 034|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
