@@ -75,20 +75,20 @@ setlocal fdn=10
 setlocal fen
 3
 normal! zo
-8
+9
 normal! zo
-10
+11
 normal! zo
-18
+19
 normal! zo
-26
+27
 normal! zo
 let s:l = 5 - ((4 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
-normal! 012|
+normal! 041|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.css
 set splitbelow splitright
@@ -150,7 +150,7 @@ normal! zt
 467
 normal! 016|
 lcd /mnt/work/lz/startpage
-tabnext 3
+tabnext 4
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
