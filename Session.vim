@@ -32,7 +32,7 @@ setlocal fdn=10
 setlocal fen
 55
 normal! zo
-let s:l = 58 - ((29 * winheight(0) + 18) / 37)
+let s:l = 58 - ((33 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -122,14 +122,14 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 59 - ((18 * winheight(0) + 21) / 42)
+let s:l = 467 - ((34 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-59
-normal! 034|
+467
+normal! 016|
 lcd /mnt/work/lz/startpage
-tabnext 5
+tabnext 3
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
