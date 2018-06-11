@@ -2,7 +2,7 @@ body {
     background-color: #4d5567;
 }
 .subhead {
-    text-decoration: 4px solid white underline;
+    text-decoration: solid white underline;
 }
 h1 {
     color: #fff;
