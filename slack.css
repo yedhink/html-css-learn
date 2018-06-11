@@ -1,3 +1,12 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
 body {
     display: table-cell;
     text-align: center;
@@ -5,9 +14,9 @@ body {
     background-color: #004e92;
 }
 .card {
-    -moz-box-shadow: 2px 2px 5px #999;
-    -webkit-box-shadow: 2px 2px 5px #999;
-    box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 5px 5px 5px #999;
+    -webkit-box-shadow: 5px 5px 5px #999;
+    box-shadow: 5px 5px 5px #999;
     width: 300px;
     background-color: #fff;
     border-radius: 5px;
