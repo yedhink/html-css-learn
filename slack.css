@@ -14,9 +14,9 @@ body {
     background-color: #004e92;
 }
 .card {
-    -moz-box-shadow: 5px 5px 5px #999;
-    -webkit-box-shadow: 5px 5px 5px #999;
-    box-shadow: 5px 5px 5px #999;
+    -moz-box-shadow: 3px 3px 5px #999;
+    -webkit-box-shadow: 3px 3px 5px #999;
+    box-shadow: 3px 3px 5px #999;
     width: 300px;
     background-color: #fff;
     border-radius: 5px;
