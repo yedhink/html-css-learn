@@ -1,5 +1,13 @@
+.card {
+    background-color: #000;
+}
+.box3 {
+    padding: 10px;
+}
 div > button {
+    border: 0;
     display: block;
+    width: 12%;
     height: 32px;
     font-size: 1em;
     text-align: center;

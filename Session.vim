@@ -19,6 +19,7 @@ badd +8 slack.css
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
+set stal=2
 edit front.html
 set splitbelow splitright
 wincmd t
@@ -128,12 +129,16 @@ setlocal fen
 normal! zo
 12
 normal! zo
-let s:l = 25 - ((24 * winheight(0) + 18) / 37)
+17
+normal! zo
+18
+normal! zo
+let s:l = 20 - ((19 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
-normal! 020|
+20
+normal! 025|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/slack.css
 set splitbelow splitright
@@ -148,12 +153,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 8 - ((7 * winheight(0) + 20) / 40)
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
-normal! 022|
+1
+normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -200,11 +205,12 @@ normal! zt
 normal! 011|
 lcd /mnt/work/lz/startpage
 tabnext 6
+set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=1 winminheight=1 winminwidth=1 shortmess=filnxtToO
+set winheight=1 winwidth=20 winminheight=1 winminwidth=1 shortmess=filnxtToO
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)
