@@ -10,11 +10,12 @@ set shortmess=aoO
 badd +1 front.html
 badd +1 index.html
 badd +1 refer.html
-badd +1 ~/.config/nvim/init.vim
+badd +414 ~/.config/nvim/init.vim
 badd +1 /mnt/work/lz/startpage
 badd +1 todo.html
 badd +12 todo.css
 badd +29 slack.html
+badd +0 slack.css
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -104,11 +105,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 12 - ((11 * winheight(0) + 18) / 37)
+let s:l = 10 - ((9 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
+10
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/slack.html
@@ -124,18 +125,40 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-10
-normal! zo
 11
 normal! zo
-28
+12
 normal! zo
-let s:l = 29 - ((28 * winheight(0) + 18) / 37)
+22
+normal! zo
+24
+normal! zo
+let s:l = 7 - ((6 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-29
-normal! 01|
+7
+normal! 091|
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/slack.css
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+let s:l = 2 - ((1 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+2
+normal! 021|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -150,12 +173,14 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 23 - ((18 * winheight(0) + 18) / 37)
+30
+normal! zo
+let s:l = 34 - ((29 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-23
-normal! 06|
+34
+normal! 021|
 lcd /mnt/work/lz/startpage
 tabedit ~/.config/nvim/init.vim
 set splitbelow splitright
@@ -170,16 +195,16 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-498
+512
 normal! zo
-let s:l = 117 - ((5 * winheight(0) + 18) / 37)
+let s:l = 414 - ((18 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-117
-normal! 03|
+414
+normal! 011|
 lcd /mnt/work/lz/startpage
-tabnext 5
+tabnext 6
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
