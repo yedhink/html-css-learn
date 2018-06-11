@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Main</title>
-    </head>
-    <body>
-        <h1>How I became an Avengers fan boy!</h1>
-        <p><strong>By <em>Yedhin Kizhakkethara</em></strong></p>
-        <p>8th June 2018</p>
-        <figure><img src="img/new.png" alt="this was supposed to be avengers" width="300" height="300"></figure>
-        <figcaption>
-            we call ourselves the avengers
-            <a href="https://www.google.com"><button>click here for more</button></a>
-        </figcaption>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Amatic SC', cursive;
+                font-size: 40px;
+                    text-decoration: wavy underline overline;
+            text-align: center;
+        }
+
+        .dimensions {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .dimensions img:first-child {
+            float: left;
+        }
+
+        .dimensions img:last-child {
+            float: right;
+        }
+
+        .center {
+            display: inline-block;
+            margin-left: 8.5%;
+            margin-right: auto;
+        }
+
+        /* THIS WAS A GOOD METHOD , BUT CENTER NOT USED WITH FLOAT
+           dimensions dimensions img:not(:first-child):not(:last-child) {
+            float: center;
+        }*/
+
+        .set-size {
+            border-radius: 5px;
+            max-height: 200px;
+            padding: 10px;
+        }
+
+        .set-size:hover {
+            -moz-box-shadow: 2px 2px 5px #999;
+            -webkit-box-shadow: 2px 2px 5px #999;
+            box-shadow: 2px 2px 5px #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainH">
+        <h1>for the love of art</h1>
+    </div>
+    <div class="container1 dimensions">
+        <img src="/home/ikigai/Pictures/green/wallhaven-13117.jpg" alt="flowerDylan" class="set-size">
+        <img src="/home/ikigai/Pictures/orchardgirl.jpg" alt="orchardgirl" class="set-size center">
+        <img src="/home/ikigai/Pictures/girlwithhairWall.png" alt="girlwithhairWall" class="set-size">
+    </div>
+    <div class="container2 dimensions">
+        <img src="/home/ikigai/Pictures/33.jpg" alt="33" class="set-size">
+        <img src="/home/ikigai/Pictures/bluemountains.jpg" alt="bluemountains" class="set-size center">
+        <img src="/home/ikigai/Pictures/wallhaven-557971.jpg" alt="wallhaven-557971" class="set-size">
+    </div>
+    <div class="container3 dimensions">
+        <img src="/home/ikigai/Pictures/.wall/34.png" alt="9" class="set-size">
+        <img src="/home/ikigai/Pictures/.wall/1.jpg" alt="1" class="set-size center">
+        <img src="/home/ikigai/Pictures/.wall/23.jpg" alt="23" class="set-size">
+    </div>
+</body>
+
 </html>
