@@ -8,6 +8,7 @@ body {
     width: 300px;
     background-color: #fff;
     border-radius: 5px;
+    align-content: center;
 }
 .box3 {
     padding: 10px;
