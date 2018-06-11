@@ -1,6 +1,10 @@
 body {
-    border-color: <++>;
+    border-color: #2C323B;
 }
 .subhead {
     text-decoration: solid white underline;
+}
+
+ul.li {
+    color: green;
 }
