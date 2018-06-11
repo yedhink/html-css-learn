@@ -129,16 +129,12 @@ setlocal fen
 normal! zo
 12
 normal! zo
-22
-normal! zo
-24
-normal! zo
-let s:l = 7 - ((6 * winheight(0) + 18) / 37)
+let s:l = 25 - ((24 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-7
-normal! 091|
+25
+normal! 020|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/slack.css
 set splitbelow splitright
@@ -204,7 +200,7 @@ normal! zt
 414
 normal! 011|
 lcd /mnt/work/lz/startpage
-tabnext 5
+tabnext 6
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
