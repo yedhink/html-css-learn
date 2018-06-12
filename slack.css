@@ -28,6 +28,9 @@ body {
     padding: 10px;
 }
 
+.box2 {
+    padding-top: 10px;
+}
 div>button {
     border-radius: 20px;
     margin-top: 5px;
