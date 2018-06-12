@@ -53,9 +53,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 button:hover {
-    -moz-box-shadow: 10px 10px 10px #000;
-    -webkit-box-shadow: 10px 10px 10px #000;
-    box-shadow: 10px 10px 10px #000;
+    -moz-box-shadow: 10px 10px 10px #999;
+    -webkit-box-shadow: 10px 10px 10px #999;
+    box-shadow: 10px 10px 10px #999;
 }
 div>button {
     cursor: pointer;
