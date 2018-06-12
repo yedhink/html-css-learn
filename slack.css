@@ -55,8 +55,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 div>button {
     cursor: pointer;
     border-radius: 20px;
-    border-color: #004e92;
-    border-style: none;
     margin-top: 5px;
     display: block;
     width: 100%;
