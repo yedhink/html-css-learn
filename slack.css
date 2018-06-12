@@ -36,12 +36,14 @@ h2 {
     padding-top: 20%;
 }
 
+/* for removing the goddamn dotted borders in IE */
 input, input:active, input:focus{
     outline: 0;
     outline-style:none;
     outline-width:0;
 }
 
+/* for removing the goddamn dotted borders in FF */
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
