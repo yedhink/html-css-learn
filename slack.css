@@ -26,11 +26,9 @@ body {
 
 .box3,.box2,.box1 {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
-.box2 {
-    padding-top: 30px;
-}
 div>button {
     border-radius: 20px;
     margin-top: 5px;
