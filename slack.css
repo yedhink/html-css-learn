@@ -38,6 +38,7 @@ h2 {
 div>button {
     cursor: pointer;
     border-radius: 20px;
+    border-color: #004e92;
     margin-top: 5px;
     display: block;
     width: 100%;
