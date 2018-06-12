@@ -137,12 +137,12 @@ normal! zo
 normal! zo
 19
 normal! zo
-let s:l = 13 - ((11 * winheight(0) + 18) / 37)
+let s:l = 17 - ((15 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-13
-normal! 07|
+17
+normal! 011|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/slack.css
 set splitbelow splitright
@@ -157,11 +157,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 18 - ((17 * winheight(0) + 18) / 37)
+let s:l = 19 - ((18 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-18
+19
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
