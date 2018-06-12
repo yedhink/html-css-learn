@@ -26,6 +26,7 @@ body {
     margin-top: 25%;
     padding: 10px;
 }
+
 div > button {
     border-radius: 20px;
     margin-top: 5px;
@@ -36,3 +37,4 @@ div > button {
     text-align: center;
     background-color: #000;
 }
+
