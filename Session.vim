@@ -157,12 +157,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 19 - ((18 * winheight(0) + 18) / 37)
+let s:l = 48 - ((17 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-19
-normal! 0
+48
+normal! 038|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -206,7 +206,7 @@ normal! zt
 414
 normal! 011|
 lcd /mnt/work/lz/startpage
-tabnext 6
+tabnext 5
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
