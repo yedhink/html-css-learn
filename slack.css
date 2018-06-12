@@ -14,7 +14,7 @@ body {
     background-color: #004e92;
 }
 h1 {
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
 }
 .card {
     -moz-box-shadow: 3px 3px 5px #999;
