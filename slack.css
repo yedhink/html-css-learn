@@ -13,8 +13,8 @@ body {
     vertical-align: middle;
     background-color: #004e92;
 }
-h1 {
-    font-size: 2em;
+h2 {
+    font-size: 1em;
 }
 .card {
     -moz-box-shadow: 3px 3px 5px #999;
