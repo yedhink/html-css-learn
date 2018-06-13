@@ -181,18 +181,16 @@ setlocal fdn=10
 setlocal fen
 3
 normal! zo
-9
-normal! zo
-9
+8
 normal! zo
 10
 normal! zo
-let s:l = 14 - ((13 * winheight(0) + 18) / 37)
+let s:l = 8 - ((6 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-14
-normal! 027|
+8
+normal! 09|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
@@ -207,12 +205,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 3 - ((2 * winheight(0) + 18) / 37)
+let s:l = 9 - ((8 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-3
-normal! 0
+9
+normal! 023|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
