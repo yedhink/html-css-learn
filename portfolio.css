@@ -1,8 +1,11 @@
 body {
-     background: linear-gradient(to right, #8E2DE2 , #4A00E0);
+    background: linear-gradient(to right, #8E2DE2, #4A00E0);
 }
 
 .container {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
     border-radius: 5px;
     margin: 5%;
     background-color: #d1d1d1;

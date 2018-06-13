@@ -37,12 +37,12 @@ setlocal fdn=10
 setlocal fen
 55
 normal! zo
-let s:l = 58 - ((29 * winheight(0) + 18) / 37)
+let s:l = 59 - ((30 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-58
-normal! 017|
+59
+normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/index.html
 set splitbelow splitright
@@ -61,11 +61,11 @@ setlocal fen
 normal! zo
 9
 normal! zo
-let s:l = 20 - ((19 * winheight(0) + 18) / 37)
+let s:l = 17 - ((9 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-20
+17
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.html
@@ -210,12 +210,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 9 - ((8 * winheight(0) + 18) / 37)
+let s:l = 6 - ((5 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-9
-normal! 029|
+6
+normal! 022|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
