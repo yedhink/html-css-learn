@@ -187,12 +187,12 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 11 - ((9 * winheight(0) + 18) / 37)
+let s:l = 12 - ((10 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
-normal! 033|
+12
+normal! 0108|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
@@ -262,7 +262,7 @@ normal! zt
 34
 normal! 09|
 lcd /mnt/work/lz/startpage
-tabnext 7
+tabnext 8
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
