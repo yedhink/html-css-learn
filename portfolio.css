@@ -22,3 +22,7 @@ p {
     float: right;
     padding-right: 100px;
 }
+
+.img3>p {
+    padding-right: 10%;
+}
