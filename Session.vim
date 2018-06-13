@@ -17,6 +17,7 @@ badd +12 todo.css
 badd +29 slack.html
 badd +8 slack.css
 badd +0 portfolio.html
+badd +0 portfolio.css
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -178,6 +179,34 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
+3
+normal! zo
+9
+normal! zo
+9
+normal! zo
+10
+normal! zo
+let s:l = 10 - ((9 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+10
+normal! 030|
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/portfolio.css
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
 let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
@@ -227,7 +256,7 @@ normal! zt
 414
 normal! 011|
 lcd /mnt/work/lz/startpage
-tabnext 7
+tabnext 8
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
