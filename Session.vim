@@ -10,14 +10,14 @@ set shortmess=aoO
 badd +1 front.html
 badd +1 index.html
 badd +1 refer.html
-badd +414 ~/.config/nvim/init.vim
+badd +556 ~/.config/nvim/init.vim
 badd +1 /mnt/work/lz/startpage
 badd +1 todo.html
 badd +12 todo.css
 badd +29 slack.html
 badd +8 slack.css
-badd +0 portfolio.html
-badd +0 portfolio.css
+badd +1 portfolio.html
+badd +1 portfolio.css
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -37,11 +37,11 @@ setlocal fdn=10
 setlocal fen
 55
 normal! zo
-let s:l = 59 - ((30 * winheight(0) + 18) / 37)
+let s:l = 60 - ((31 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-59
+60
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/index.html
@@ -61,7 +61,7 @@ setlocal fen
 normal! zo
 9
 normal! zo
-let s:l = 17 - ((9 * winheight(0) + 18) / 37)
+let s:l = 17 - ((10 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 10 - ((8 * winheight(0) + 18) / 37)
+let s:l = 10 - ((5 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -111,7 +111,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 10 - ((9 * winheight(0) + 18) / 37)
+let s:l = 10 - ((8 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -139,7 +139,7 @@ normal! zo
 normal! zo
 19
 normal! zo
-let s:l = 17 - ((15 * winheight(0) + 18) / 37)
+let s:l = 17 - ((16 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -168,8 +168,14 @@ normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.html
 set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
 wincmd t
 set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 95 + 96) / 192)
+exe 'vert 2resize ' . ((&columns * 96 + 96) / 192)
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -179,24 +185,46 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-3
+6
 normal! zo
-9
+12
 normal! zo
-10
+13
 normal! zo
-let s:l = 9 - ((8 * winheight(0) + 18) / 37)
+let s:l = 5 - ((4 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-9
-let s:c = 31 - ((24 * winwidth(0) + 43) / 87)
-if s:c > 0
-  exe 'normal! ' . s:c . '|zs' . 31 . '|'
-else
-  normal! 031|
-endif
+5
+normal! 0
 lcd /mnt/work/lz/startpage
+wincmd w
+argglobal
+if bufexists('~/.config/nvim/init.vim') | buffer ~/.config/nvim/init.vim | else | edit ~/.config/nvim/init.vim | endif
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+521
+normal! zo
+528
+normal! zo
+544
+normal! zo
+let s:l = 557 - ((35 * winheight(0) + 21) / 42)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+557
+normal! 016|
+lcd /mnt/work/lz/startpage
+wincmd w
+exe 'vert 1resize ' . ((&columns * 95 + 96) / 192)
+exe 'vert 2resize ' . ((&columns * 96 + 96) / 192)
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
 wincmd t
@@ -210,12 +238,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 6 - ((5 * winheight(0) + 18) / 37)
+let s:l = 10 - ((9 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-6
-normal! 022|
+10
+normal! 05|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
@@ -232,34 +260,14 @@ setlocal fdn=10
 setlocal fen
 30
 normal! zo
-let s:l = 34 - ((18 * winheight(0) + 18) / 37)
+let s:l = 34 - ((17 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 34
-normal! 021|
+normal! 09|
 lcd /mnt/work/lz/startpage
-tabedit ~/.config/nvim/init.vim
-set splitbelow splitright
-wincmd t
-set winminheight=1 winminwidth=1 winheight=1 winwidth=1
-argglobal
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=10
-setlocal fen
-let s:l = 414 - ((18 * winheight(0) + 18) / 37)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-414
-normal! 011|
-lcd /mnt/work/lz/startpage
-tabnext 8
+tabnext 7
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
