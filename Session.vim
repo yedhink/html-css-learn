@@ -187,16 +187,16 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 4 - ((3 * winheight(0) + 18) / 37)
+let s:l = 11 - ((9 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-4
-let s:c = 30 - ((24 * winwidth(0) + 43) / 87)
+11
+let s:c = 95 - ((81 * winwidth(0) + 43) / 87)
 if s:c > 0
-  exe 'normal! ' . s:c . '|zs' . 30 . '|'
+  exe 'normal! ' . s:c . '|zs' . 95 . '|'
 else
-  normal! 030|
+  normal! 095|
 endif
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
