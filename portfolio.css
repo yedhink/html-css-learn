@@ -4,8 +4,8 @@ body {
 
 .container {
     display: table;
-    width: 1200px;
-    height: 670px;
+    /* width: 1200px; */
+    /* height: 670px; */
     margin: 5%;
     table-layout: fixed;
     border-radius: 5px;
