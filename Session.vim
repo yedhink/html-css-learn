@@ -185,16 +185,16 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 7 - ((6 * winheight(0) + 18) / 37)
+let s:l = 9 - ((8 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-7
-let s:c = 7 - ((0 * winwidth(0) + 43) / 87)
+9
+let s:c = 31 - ((24 * winwidth(0) + 43) / 87)
 if s:c > 0
-  exe 'normal! ' . s:c . '|zs' . 7 . '|'
+  exe 'normal! ' . s:c . '|zs' . 31 . '|'
 else
-  normal! 07|
+  normal! 031|
 endif
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
@@ -210,12 +210,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 2 - ((1 * winheight(0) + 18) / 37)
+let s:l = 9 - ((8 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-2
-normal! 044|
+9
+normal! 029|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
