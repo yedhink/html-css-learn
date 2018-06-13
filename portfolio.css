@@ -14,6 +14,6 @@ body {
 }
 
 img {
-    display: inline;
+    display: inline-block;
     max-height: 200px;
 }

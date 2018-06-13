@@ -161,7 +161,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 59 - ((28 * winheight(0) + 21) / 42)
+let s:l = 59 - ((25 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -187,12 +187,17 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 10 - ((9 * winheight(0) + 21) / 42)
+let s:l = 4 - ((3 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-10
-normal! 019|
+4
+let s:c = 30 - ((24 * winwidth(0) + 43) / 87)
+if s:c > 0
+  exe 'normal! ' . s:c . '|zs' . 30 . '|'
+else
+  normal! 030|
+endif
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
@@ -207,12 +212,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 16 - ((15 * winheight(0) + 21) / 42)
+let s:l = 11 - ((8 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-16
-normal! 05|
+11
+normal! 020|
 lcd /mnt/work/lz/startpage
 tabedit ~/.config/nvim/init.vim
 set splitbelow splitright
