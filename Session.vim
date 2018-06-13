@@ -10,7 +10,7 @@ set shortmess=aoO
 badd +1 front.html
 badd +1 index.html
 badd +1 refer.html
-badd +556 ~/.config/nvim/init.vim
+badd +564 ~/.config/nvim/init.vim
 badd +1 /mnt/work/lz/startpage
 badd +1 todo.html
 badd +12 todo.css
@@ -168,14 +168,8 @@ normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.html
 set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
 wincmd t
 set winminheight=1 winminwidth=1 winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 95 + 96) / 192)
-exe 'vert 2resize ' . ((&columns * 96 + 96) / 192)
 argglobal
 setlocal fdm=indent
 setlocal fde=0
@@ -185,22 +179,24 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-6
+3
 normal! zo
-12
+9
 normal! zo
-13
+10
 normal! zo
-let s:l = 5 - ((4 * winheight(0) + 21) / 42)
+let s:l = 1 - ((0 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
+1
 normal! 0
 lcd /mnt/work/lz/startpage
-wincmd w
+tabedit ~/.config/nvim/init.vim
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
 argglobal
-if bufexists('~/.config/nvim/init.vim') | buffer ~/.config/nvim/init.vim | else | edit ~/.config/nvim/init.vim | endif
 setlocal fdm=indent
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -209,22 +205,19 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-521
+523
 normal! zo
-528
+530
 normal! zo
-544
+546
 normal! zo
-let s:l = 557 - ((35 * winheight(0) + 21) / 42)
+let s:l = 548 - ((17 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-557
-normal! 016|
+548
+normal! 05|
 lcd /mnt/work/lz/startpage
-wincmd w
-exe 'vert 1resize ' . ((&columns * 95 + 96) / 192)
-exe 'vert 2resize ' . ((&columns * 96 + 96) / 192)
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
 wincmd t
