@@ -7,7 +7,7 @@ body {
     /* width: 1200px; */
     /* height: 670px; */
     min-width: 1px;
-    min-height: 50%;
+    min-height: 1px;
     height: 100%;
     margin: 5%;
     table-layout: fixed;
