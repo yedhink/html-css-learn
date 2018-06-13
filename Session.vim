@@ -187,12 +187,12 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 20 - ((18 * winheight(0) + 18) / 37)
+let s:l = 11 - ((10 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-20
-normal! 067|
+11
+normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
@@ -207,11 +207,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 18 - ((17 * winheight(0) + 18) / 37)
+let s:l = 12 - ((11 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-18
+12
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit ~/.config/nvim/init.vim
