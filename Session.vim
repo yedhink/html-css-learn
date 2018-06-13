@@ -61,11 +61,11 @@ setlocal fen
 normal! zo
 9
 normal! zo
-let s:l = 17 - ((10 * winheight(0) + 21) / 42)
+let s:l = 41 - ((11 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-17
+41
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.html
@@ -91,7 +91,7 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 10 - ((5 * winheight(0) + 21) / 42)
+let s:l = 10 - ((5 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -111,7 +111,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 10 - ((8 * winheight(0) + 21) / 42)
+let s:l = 10 - ((7 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -139,7 +139,7 @@ normal! zo
 normal! zo
 19
 normal! zo
-let s:l = 17 - ((16 * winheight(0) + 21) / 42)
+let s:l = 17 - ((16 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -185,12 +185,32 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 5 - ((4 * winheight(0) + 18) / 37)
+let s:l = 10 - ((9 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
-normal! 03|
+10
+normal! 019|
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/portfolio.css
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+let s:l = 17 - ((16 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+17
+normal! 06|
 lcd /mnt/work/lz/startpage
 tabedit ~/.config/nvim/init.vim
 set splitbelow splitright
@@ -218,26 +238,6 @@ normal! zt
 564
 normal! 05|
 lcd /mnt/work/lz/startpage
-tabedit /mnt/work/lz/startpage/portfolio.css
-set splitbelow splitright
-wincmd t
-set winminheight=1 winminwidth=1 winheight=1 winwidth=1
-argglobal
-setlocal fdm=indent
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=
-setlocal fdl=10
-setlocal fml=1
-setlocal fdn=10
-setlocal fen
-let s:l = 10 - ((9 * winheight(0) + 18) / 37)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-10
-normal! 05|
-lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/refer.html
 set splitbelow splitright
 wincmd t
@@ -260,7 +260,7 @@ normal! zt
 34
 normal! 09|
 lcd /mnt/work/lz/startpage
-tabnext 7
+tabnext 8
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
