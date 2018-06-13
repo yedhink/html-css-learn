@@ -6,7 +6,7 @@ body {
     display: table;
     width: 1000px;
     height: 1000px;
-    margin: 5 auto;
+    margin: 5 5;
     table-layout: fixed;
     border-radius: 5px;
     background-color: #d1d1d1;
