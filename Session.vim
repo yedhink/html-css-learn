@@ -61,11 +61,13 @@ setlocal fen
 normal! zo
 9
 normal! zo
-let s:l = 41 - ((11 * winheight(0) + 18) / 37)
+56
+normal! zo
+let s:l = 76 - ((5 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-41
+76
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/todo.html
@@ -91,7 +93,7 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 10 - ((5 * winheight(0) + 18) / 37)
+let s:l = 10 - ((5 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -111,12 +113,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 10 - ((7 * winheight(0) + 18) / 37)
+let s:l = 8 - ((6 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-10
-normal! 0
+8
+normal! 026|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/slack.html
 set splitbelow splitright
@@ -139,7 +141,7 @@ normal! zo
 normal! zo
 19
 normal! zo
-let s:l = 17 - ((16 * winheight(0) + 18) / 37)
+let s:l = 17 - ((16 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -159,11 +161,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 18) / 37)
+let s:l = 59 - ((28 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+59
 normal! 0
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.html
@@ -185,7 +187,7 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 10 - ((9 * winheight(0) + 18) / 37)
+let s:l = 10 - ((9 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -205,12 +207,12 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 17 - ((16 * winheight(0) + 18) / 37)
+let s:l = 16 - ((15 * winheight(0) + 21) / 42)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-17
-normal! 06|
+16
+normal! 05|
 lcd /mnt/work/lz/startpage
 tabedit ~/.config/nvim/init.vim
 set splitbelow splitright
