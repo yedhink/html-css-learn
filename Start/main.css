@@ -147,7 +147,7 @@ main {
     width: 100%;
     background-image: url("./images/dog.jpg");
     background-size: cover;
-    height: 50%;
+    height: 500px;
 }
 
 .hero article {
