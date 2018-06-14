@@ -1,6 +1,5 @@
 body,
 html {
-    display: table-column;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -78,7 +77,6 @@ ul {
     font-weight: 300;
     font-size: 4em;
     margin: 0.5em 0.25em;
-    display: inline-block;
     color: #212121;
 }
 
