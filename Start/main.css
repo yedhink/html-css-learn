@@ -42,6 +42,7 @@ ul {
  */
 
 .news__more {
+    float: right;
     font-size: .8em;
     color: #333;
     text-decoration: none;
