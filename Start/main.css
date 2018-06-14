@@ -144,7 +144,6 @@ main {
  */
 
 .hero {
-    float: left;
     width: 480px;
     position: relative;
     background-image: url("./images/dog.jpg");
