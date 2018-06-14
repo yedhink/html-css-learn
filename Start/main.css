@@ -109,11 +109,13 @@ ul {
 }
 
 .nav a {
+    padding: 1.5em;
     text-decoration: none;
     color: #616161;
 }
 
 .nav a:hover {
+    padding: 1.5em;
     text-decoration: underline;
     color: #212121;
 }
