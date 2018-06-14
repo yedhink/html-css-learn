@@ -18,6 +18,7 @@ badd +29 slack.html
 badd +8 slack.css
 badd +1 portfolio.html
 badd +26 portfolio.css
+badd +0 Start/index.html
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -37,7 +38,7 @@ setlocal fdn=10
 setlocal fen
 55
 normal! zo
-let s:l = 60 - ((16 * winheight(0) + 10) / 21)
+let s:l = 60 - ((28 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -63,7 +64,7 @@ normal! zo
 normal! zo
 56
 normal! zo
-let s:l = 76 - ((3 * winheight(0) + 10) / 21)
+let s:l = 76 - ((5 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -93,7 +94,7 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 10 - ((3 * winheight(0) + 10) / 21)
+let s:l = 10 - ((5 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -187,12 +188,32 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 11 - ((10 * winheight(0) + 18) / 37)
+let s:l = 4 - ((3 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
-normal! 0
+4
+normal! 06|
+lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/Start/index.html
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+let s:l = 4 - ((3 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+4
+normal! 086|
 lcd /mnt/work/lz/startpage
 tabedit /mnt/work/lz/startpage/portfolio.css
 set splitbelow splitright
@@ -233,7 +254,7 @@ normal! zo
 normal! zo
 546
 normal! zo
-let s:l = 564 - ((35 * winheight(0) + 20) / 40)
+let s:l = 564 - ((32 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -255,14 +276,14 @@ setlocal fdn=10
 setlocal fen
 30
 normal! zo
-let s:l = 34 - ((10 * winheight(0) + 10) / 21)
+let s:l = 34 - ((18 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 34
 normal! 09|
 lcd /mnt/work/lz/startpage
-tabnext 7
+tabnext 8
 set stal=1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
