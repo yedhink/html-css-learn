@@ -18,8 +18,9 @@ badd +29 slack.html
 badd +8 slack.css
 badd +1 portfolio.html
 badd +26 portfolio.css
-badd +0 Start/index.html
-badd +0 Start/main.css
+badd +1 Start/index.html
+badd +1 Start/main.css
+badd +0 flexbox.html
 argglobal
 silent! argdel *
 $argadd /mnt/work/lz/startpage
@@ -39,7 +40,7 @@ setlocal fdn=10
 setlocal fen
 55
 normal! zo
-let s:l = 60 - ((28 * winheight(0) + 18) / 37)
+let s:l = 60 - ((16 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -65,7 +66,7 @@ normal! zo
 normal! zo
 56
 normal! zo
-let s:l = 76 - ((5 * winheight(0) + 18) / 37)
+let s:l = 76 - ((3 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -95,7 +96,7 @@ normal! zo
 normal! zo
 27
 normal! zo
-let s:l = 10 - ((5 * winheight(0) + 18) / 37)
+let s:l = 10 - ((3 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -115,7 +116,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 8 - ((7 * winheight(0) + 18) / 37)
+let s:l = 8 - ((4 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -143,7 +144,7 @@ normal! zo
 normal! zo
 19
 normal! zo
-let s:l = 17 - ((14 * winheight(0) + 18) / 37)
+let s:l = 17 - ((8 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -163,7 +164,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 59 - ((25 * winheight(0) + 18) / 37)
+let s:l = 59 - ((14 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -189,7 +190,7 @@ normal! zo
 normal! zo
 10
 normal! zo
-let s:l = 4 - ((3 * winheight(0) + 18) / 37)
+let s:l = 4 - ((2 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -209,7 +210,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 37 - ((31 * winheight(0) + 18) / 37)
+let s:l = 37 - ((18 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -229,7 +230,7 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-let s:l = 118 - ((23 * winheight(0) + 18) / 37)
+let s:l = 118 - ((13 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -256,6 +257,28 @@ normal! zt
 12
 normal! 0
 lcd /mnt/work/lz/startpage
+tabedit /mnt/work/lz/startpage/flexbox.html
+set splitbelow splitright
+wincmd t
+set winminheight=1 winminwidth=1 winheight=1 winwidth=1
+argglobal
+setlocal fdm=indent
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=
+setlocal fdl=10
+setlocal fml=1
+setlocal fdn=10
+setlocal fen
+75
+normal! zo
+let s:l = 4 - ((3 * winheight(0) + 18) / 37)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+4
+normal! 0
+lcd /mnt/work/lz/startpage
 tabedit ~/.config/nvim/init.vim
 set splitbelow splitright
 wincmd t
@@ -269,13 +292,11 @@ setlocal fdl=10
 setlocal fml=1
 setlocal fdn=10
 setlocal fen
-525
+507
 normal! zo
-532
+530
 normal! zo
-548
-normal! zo
-let s:l = 11 - ((5 * winheight(0) + 18) / 37)
+let s:l = 11 - ((9 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -297,7 +318,7 @@ setlocal fdn=10
 setlocal fen
 30
 normal! zo
-let s:l = 34 - ((18 * winheight(0) + 18) / 37)
+let s:l = 34 - ((10 * winheight(0) + 10) / 21)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
